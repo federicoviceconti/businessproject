@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="10dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:id="@+id/student_user"
+            android:text="@string/title"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:padding="16dp"
+            android:id="@+id/menu"
+            android:textSize="22sp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#8942;"/>
+
+        <LinearLayout
+            android:padding="4dp"
+            android:id="@+id/linear_layout1"
+            android:orientation="vertical"
+            android:layout_below="@id/student_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/student_mail"
+                android:layout_weight="1"
+                android:text="example mail"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/student_phone"
+                android:layout_weight="1"
+                android:text="example phone"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/student_course"
+                android:layout_weight="1"
+                android:text="example course"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/call"
+            android:id="@+id/btn_call"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/linear_layout1"/>
+
+        <Button
+            android:layout_below="@id/linear_layout1"
+            android:text="@string/send"
+            android:id="@+id/btn_send"
+            android:layout_toStartOf="@id/btn_call"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_below="@id/linear_layout1"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="@string/info"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

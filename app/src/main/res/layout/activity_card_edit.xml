@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_margin="16dp"
+        android:text="@string/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/tv_name"
+        android:text="@string/mail"
+        android:layout_toStartOf="@+id/card_user_et" />
+
+    <TextView
+        android:layout_below="@id/tv_mail"
+        android:id="@+id/tv_phone"
+        android:layout_margin="16dp"
+        android:text="@string/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_toEndOf="@id/tv_name"
+        android:id="@+id/card_user_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/tv_name"
+        android:layout_toEndOf="@id/tv_mail"
+        android:id="@+id/card_mail_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/tv_mail"
+        android:layout_toEndOf="@id/tv_phone"
+        android:id="@+id/card_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        style="@style/Base.Widget.AppCompat.Spinner"
+        android:padding="16dp"
+        android:id="@+id/card_course"
+        android:layout_below="@id/card_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/course_array"/>
+
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/card_btn_ok"
+        android:text="@string/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

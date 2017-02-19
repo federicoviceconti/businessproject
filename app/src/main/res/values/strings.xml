@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Business App</string>
+    <string name="title">Titolo</string>
+    <string name="subtitle">Sottotitolo</string>
+    <string name="center_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a convallis mauris.
+        In facilisis non enim vel sodales. Sed imperdiet et eros id faucibus.
+        Praesent lacinia mi at neque vehicula, maximus vulputate arcu rutrum.
+        Phasellus eget tellus ac nibh sagittis aliquam tristique non lectus.
+        Praesent venenatis sem sem, nec varius.</string>
+    <string name="read_text">Leggi</string>
+    <string name="ok">OK</string>
+    <string name="info">Info</string>
+    <string name="send">Send</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="date">01/10/2015</string>
+    <string name="name">Name</string>
+    <string name="mail">Mail</string>
+    <string name="phone">Phone</string>
+    <string name="geo">Geo</string>
+    <string name="call">Call</string>
+    <string name="reset">Reset</string>
+    <string name="spinner_choice">Choice your course</string>
+    <string name="et_call">Insert phone num</string>
+    <string name="et_geo">Insert your geo</string>
+    <string name="login_name_page">My login page</string>
+    <string name="login_text_username">Username</string>
+    <string name="login_text_password">Password</string>
+    <string name="login_success">Login success!</string>
+    <string name="hint_text_username">Insert your username</string>
+    <string name="hint_et_call">Insert phone num</string>
+    <string name="hint_et_geo">Insert your address</string>
+    <string name="hint_text_password">Insert your password</string>
+    <string name="hint_text_email">Insert your email</string>
+    <string name="hint_text_phone">Insert your phone</string>
+
+    <string-array name="course_array">
+        <item>LTM</item>
+        <item>ISA</item>
+        <item>SKILLZONE</item>
+    </string-array>
+
+    <!-- ORDER COFFEE -->
+    <string name="cb_coffee">Coffee</string>
+    <string name="cb_tea">Tea</string>
+    <string name="cb_cola">Cola</string>
+    <string name="tv_qty">Quantity</string>
+    <string name="tv_money">Money</string>
+</resources>

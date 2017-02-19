@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORDER COFFEE"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!-- LINEAR LAYOUT 1 TYPE DRINKS -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_below="@id/tv_order"
+            android:orientation="horizontal"
+            android:id="@+id/linear_drinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_coffee"
+                android:text="Coffee"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cb_tea"
+                android:text="Tea"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cb_cola"
+                android:text="Cola"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- LINEAR LAYOUT 2 QTY DRINKS -->
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_below="@id/tv_order"
+        android:orientation="horizontal"
+        android:id="@+id/linear_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/tv_qty"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:gravity="center"
+            android:text="+"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_qty"
+            android:gravity="center"
+            android:text="0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:gravity="center"
+            android:text="-"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <!-- LINEAR LAYOUT 3 MONEY DRINKS -->
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_below="@id/tv_order"
+            android:orientation="horizontal"
+            android:id="@+id/linear_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/tv_money"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="3"
+                android:id="@+id/tv_money"
+                android:text="You're salary!"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- LINEAR LAYOUT 3 MONEY DRINKS -->
+        <RelativeLayout
+
+            android:layout_margin="10dp"
+            android:layout_below="@id/tv_order"
+            android:orientation="horizontal"
+            android:id="@+id/relative_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_send_coffee"
+                android:text="@string/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_reset_coffee"
+                android:layout_toEndOf="@id/btn_send_coffee"
+                android:text="@string/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_ok_coffee"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/btn_reset_coffee"
+                android:text="@string/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+</LinearLayout>
